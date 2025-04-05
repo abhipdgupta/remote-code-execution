@@ -1,17 +1,19 @@
 #!/usr/bin/env bash
-
-images=("gcc" "mono" "golang" "openjdk:11.0.6-jre-slim" "zenika/kotlin" "python:3" "rust" "ruby" "haskell")
+#"zenika/kotlin"
+#"rust" "ruby" "haskell"
+#"golang"
+images=("gcc" "mono" "openjdk:11.0.6-jre-slim" "python:3")
 
 # Only for compiled languages
 declare -A compilationDockerfilesPaths=(
   ["c"]="c"
   ["cpp"]="cpp"
-  ["cs"]="cs"
-  ["go"]="go"
-  ["haskell"]="hs"
-  ["kotlin"]="kt"
-  ["rust"]="rs"
-  ["scala"]="scala"
+#  ["cs"]="cs"
+#  ["go"]="go"
+#  ["haskell"]="hs"
+#  ["kotlin"]="kt"
+#  ["rust"]="rs"
+#  ["scala"]="scala"
   ["java"]="java"
 )
 
